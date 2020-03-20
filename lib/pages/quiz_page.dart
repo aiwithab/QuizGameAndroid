@@ -18,7 +18,13 @@ class QuizPageState extends State<QuizPage> {
   Question currentQuestion;
   Quiz quiz = new Quiz([
     new Question("Elon Musk is Human", false),
-    new Question("Flutter is awsome", true)
+    new Question("Flutter is awsome", true),
+    new Question("My UI skills are great", true),
+    new Question("This game is simple and cool", true),
+    new Question("Our prime mininster is lazy", true),
+    new Question("Maharashtra is a city", false),
+    new Question("India got its indipendence on 26/1/1947", false),
+    new Question("ISRO is mobile company", false),
   ]);
   String questionText;
   int questionNumber;

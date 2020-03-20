@@ -48,10 +48,10 @@ class QuestionTextState extends State<QuestoinText> with SingleTickerProviderSta
     return new Material(
             color: Colors.white,
             child: new Padding(
-              padding: new EdgeInsets.symmetric(vertical: 20.0),
+              padding: new EdgeInsets.symmetric(vertical: 30.0),
               child: new Center(
-              child: new Text('statement ' + widget._questionNumber.toString() + ": " + widget._question,
-              style: new TextStyle(fontSize: _fontSizeAnimation.value * 15),
+              child: new Text('Statement ' + widget._questionNumber.toString() + ": " + widget._question,
+              style: new TextStyle(fontSize: _fontSizeAnimation.value * 17),
               ),
             ),
             ),

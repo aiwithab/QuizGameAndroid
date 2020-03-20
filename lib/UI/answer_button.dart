@@ -12,7 +12,7 @@ class AnswerButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Expanded(
             child: new Material( // true button
-            color: _answer == true ? Colors.greenAccent : Colors.redAccent,
+            color: _answer == true ? Colors.green : Colors.red,
             child: new InkWell(
               onTap: () => _onTap(),
               child: new Center(

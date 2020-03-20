@@ -25,7 +25,7 @@ class CorrctWrongOverlayState extends State<CorrectWrongOverlay> with SingleTick
     super.initState();
 
     _iconAnimaitonController = new AnimationController(duration: new Duration(seconds: 2), vsync: this);
-    _iconAnimation = new CurvedAnimation(parent: _iconAnimaitonController, curve: Curves.elasticInOut);
+    _iconAnimation = new CurvedAnimation(parent: _iconAnimaitonController, curve: Curves.bounceOut);
     _iconAnimation.addListener(() => this.setState(() {}));
     _iconAnimaitonController.forward();
   }
@@ -56,7 +56,9 @@ class CorrctWrongOverlayState extends State<CorrectWrongOverlay> with SingleTick
             new Padding(
               padding: new EdgeInsets.only(bottom: 20.0),
             ),
-            new Text(widget._isCorrect == true ? "Correct" : "Wrong", style: new TextStyle(color: Colors.white, fontSize: 30.0),)
+            new Text(widget._isCorrect == true ? "Correct" : "Wrong", style: new TextStyle(color: Colors.white, fontSize: 30.0,fontWeight: FontWeight.bold),),
+            new SizedBox(height: 150.0,),
+            new Text("Click to continue", style: TextStyle(fontSize: 16.0,color: Colors.white, fontWeight: FontWeight.bold),)
           ],
         ),
       ),
